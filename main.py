@@ -22,7 +22,7 @@ from telegram.ext import (
 )
 
 api_key = 'cab106cfc89364a156a783cc944902b8'
-PORT = int(os.environ.get('PORT', '8443'))
+PORT = int(os.environ.get('PORT', '8080'))
 logger = logging.getLogger(__name__)
 
 TOKEN = '7696850032:AAFOIEk892XNbw-zPHwrnqySokvDQtvD6S8'
