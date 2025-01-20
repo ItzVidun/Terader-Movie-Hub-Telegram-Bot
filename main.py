@@ -21,12 +21,12 @@ from telegram.ext import (
     filters
 )
 
-api_key = os.environ.get('tmdbApiKey')
+api_key = 'cab106cfc89364a156a783cc944902b8'
 PORT = int(os.environ.get('PORT', '8443'))
 logger = logging.getLogger(__name__)
 
-TOKEN = os.environ.get('TOKEN')
-name = ''
+TOKEN = '7696850032:AAFOIEk892XNbw-zPHwrnqySokvDQtvD6S8'
+name = 'Vidun_Movie_Bot'
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
@@ -47,7 +47,7 @@ LinksCache = {}
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text(
-        'Welcome To Terader Movie Hub the place where movie links meet!..../usage if you are having issues.')
+        'Welcome To Vidun Movie Bot!..../usage if you are having issues.')
 
 
 async def callback(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
